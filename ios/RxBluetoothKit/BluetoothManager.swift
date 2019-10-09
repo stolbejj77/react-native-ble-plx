@@ -245,8 +245,8 @@ public class BluetoothManager {
             return Disposables.create { [weak self] in
                 guard let strongSelf = self else { return }
                 if !peripheral.isConnected {
-                    strongSelf.centralManager.cancelPeripheralConnection(peripheral.peripheral)
-                    disposable.dispose()
+                    //strongSelf.centralManager.cancelPeripheralConnection(peripheral.peripheral)
+                    //disposable.dispose()
                 }
             }
         }
